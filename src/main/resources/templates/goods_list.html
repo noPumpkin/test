@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>商品列表</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" th:href="@{/assert/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/assert/css/iconfont.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/assert/css/goods.css}"/>
+
+</head>
+<body>
+<div class="seckill_content">
+    <div id="miaosha" class="miaosha w clearfix">
+            <div class="miaosha-time">
+                <div class="ms_tit">秒杀抢购</div>
+                <span class="iconfont icon-alarm"></span>
+                <div class="ms_desc">本场距离结束还剩</div>
+                <div class="countdown clearfix">
+                    <div class="cd_item cd_hour">--</div>
+                    <div class="cd_item cd_minute">--</div>
+                    <div class="cd_item cd_second">--</div>
+                </div>
+            </div>
+            <div id="miaoshaList" class="miaosha-list clearfix">
+                <div class="ms-item" th:each="goods:${goodsVos}">
+                    <a th:href="@{'/goods/detail?goodsId='+${goods.id}}" class="ms-item-lk" >
+                        <img th:src="@{${goods.goodsImg}}" alt="" class="ms-item-img">
+                        <p class="ms-item-name" style="text-align: center;" th:text="${goods.goodsName}"></p>
+                        <div class="ms-item-buy">
+                            <span class="progress"><span class="progress-bar"></span></span>
+                            <span class="buy-num">已抢30%</span>
+                        </div>
+                        <div class="ms-item-price clearfix">
+                            <span class="cm-price new-price" th:text="${goods.seckillPrice}+'元  '"></span>
+                            <span class="cm-price origin-price" th:text="${goods.goodsPrice}+'元'"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+    </div>
+</div>
+</body>
+
+</html>

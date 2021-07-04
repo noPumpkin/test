@@ -1,0 +1,211 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.seckill_content{
+    width: 100%;
+    min-width: 800px;
+}
+.seckill_content .title{
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+}
+.all_seckill_goods{
+    width: 100%;
+    margin: 0 auto;
+
+}
+.all_seckill_goods .seckill_goods{
+    width: 260px;
+    height:auto;
+    float: left;
+    margin: 20px;
+}
+.all_seckill_goods .seckill_goods img{
+    vertical-align: middle;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.all_seckill_goods .seckill_goods h4{
+    text-align: center;
+}
+.all_seckill_goods .seckill_goods .seckill_price{
+    width: 100%;
+    font-size: 12px;
+
+}
+.all_seckill_goods .seckill_goods .seckill_price p {
+    text-align: center;
+    overflow: hidden;
+    color: #b0b0b0;
+}
+.all_seckill_goods .seckill_goods .seckill_price p .price1{
+    color: #ff6700;
+}
+.all_seckill_goods .seckill_goods .seckill_price p .price2{
+    color: #b0b0b0;
+}
+.seckill_price button{
+    width: 100%;
+    border: #9b11cc solid 1px;
+}
+.miaosha {
+    width:80%;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+.miaosha .miaosha-time {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 275px;
+    background-color: #e63e3e;
+    color: #fff;
+}
+.miaosha-time .ms_tit {
+    text-align: center;
+    font-size: 34px;
+    margin-top: 40px;
+}
+.miaosha-time .icon-alarm {
+    position: absolute;
+    top: 93px;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 40px;
+
+}
+.miaosha-time .ms_desc {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+.countdown {
+    position: absolute;
+    left: 32.5px;
+    bottom: 20px;
+}
+.countdown .cd_item {
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.miaosha-list {
+    float: left;
+    width: 990px;
+    height: 275px;
+}
+
+.miaosha-list .ms-item {
+    float: left;
+    width: 25%;
+    height: 275px;
+    background: #fff;
+}
+
+.ms-item-lk {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding:0 5px;
+}
+
+.ms-item-lk .ms-item-img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    padding: 20px;
+    margin: auto;
+}
+.ms-item-lk:hover .ms-item-img {
+    transform: scale(1.1);
+    transition:transform .5s ease;
+}
+
+.ms-item-lk .ms-item-name {
+    padding: 0 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ms-item-lk:hover .ms-item-name {
+    color: #e63e3e;
+}
+
+.ms-item-buy {
+    line-height: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.ms-item-buy .progress {
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 5px 5px 0 0;
+}
+.ms-item-buy .progress .progress-bar {
+    display: block;
+    width: 30%;
+    height: 10px;
+    background-color: #e63e3e;
+    border-radius: 5px 0 0 5px;
+}
+
+.ms-item-buy .buy-num {
+    display: inline-block;
+    color: #e63e3e;
+    font-size: 12px;
+}
+
+.ms-item-price {
+    display: block;
+    width: 162px;
+    margin: auto;
+    border: 1px solid #e63e3e;
+}
+.ms-item-price .cm-price {
+    float: left;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.ms-item-price .new-price {
+    font-size: 14px;
+    background-color: #e63e3e;
+    color: #fff;
+    font-weight: bold;
+}
+
+.ms-item-price .origin-price {
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+}
+

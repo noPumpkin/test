@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>登录</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <!-- jquery -->
+    <script type="text/javascript" th:src="@{/assert/js/jquery.min.js}"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" th:href="@{/assert/bootstrap/css/bootstrap.min.css}"/>
+    <!--    css-->
+    <link rel="stylesheet" type="text/css" th:href="@{/assert/css/login.css}"/>
+
+    <style>
+        .form-control{
+            font-size: 10px !important;
+        }
+        .error{
+            font-size: 10px !important;
+            color: red !important;
+            font-weight:100 !important;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="title">
+        <h4>用户登录</h4>
+    </div>
+    <p style="color: red;text-align: center" th:text="${msg}"></p>
+    <form name="loginForm" id="loginForm" method="post">
+        <div class="form-group">
+            <input id="mobile" name="mobile" class="form-control" type="text" placeholder="手机号码" required="true"
+                   minlength="11" maxlength="11"/>
+        </div>
+
+        <div class="form-group">
+            <input id="password" name="password" class="form-control" type="password" placeholder="密码"
+                   required="true" minlength="6" maxlength="16"/>
+        </div>
+        <div class="form-group">
+            <button style="display: inline-block; width: 150px;" class="btn btn-primary btn-block" onclick="login()">登录</button>
+            <button style="display: inline-block; width: 150px;" class="btn btn-primary btn-block" onclick="register()">注册</button>
+        </div>
+
+
+    </form>
+
+</div>
+</body>
+<script type="text/javascript" th:src="@{/assert/bootstrap/js/bootstrap.min.js}"></script>
+<!-- jquery-validator -->
+<script type="text/javascript" th:src="@{/assert/jquery-validation/jquery.validate.min.js}"></script>
+<script type="text/javascript" th:src="@{/assert/jquery-validation/localization/messages_zh.min.js}"></script>
+<!-- layer -->
+<script type="text/javascript" th:src="@{/assert/layer/layer.js}"></script>
+<!-- md5.js -->
+<script type="text/javascript" th:src="@{/assert/js/md5.min.js}"></script>
+<!-- common.js -->
+<script type="text/javascript" th:src="@{/assert/js/common.js}"></script>
+<script>
+    function register() {
+        window.location.href = "/register";
+    }
+    function login() {
+        /*
+        检验表单是否符合规则 required = true
+         */
+        $("#loginForm").validate({
+            /*
+            当表单验证成功并提交时执行，存在此方法时表单
+            只能在此方法内部执行form.submit()才能提交，
+            可理解成它替代了表单的onsubmit方法；
+             */
+            submitHandler: function (form) {
+                doLogin();
+            }
+        });
+    }
+
+    function doLogin() {
+        //显示加载中
+        g_showLoading();
+
+        //获取明文密码进行MD5加密
+        var inputPass = $("#password").val();
+        var salt = g_passsword_salt;
+        var str = "" + salt.charAt(0) + salt.charAt(2) + inputPass + salt.charAt(5) + salt.charAt(4);
+        var password = md5(str);
+
+        $.ajax({
+            url: "/user/do_login",
+            type: "POST",
+            data: {
+                mobile: $("#mobile").val(),
+                password: password
+            },
+            success: function (data) {
+                layer.closeAll();
+                if (data.code == 0) {
+                    layer.msg("成功");
+                    window.location.href = "/goods/list";
+                } else {
+                    layer.msg(data.msg);
+                }
+            },
+            error: function () {
+                layer.closeAll();
+            }
+        });
+    }
+</script>
+</html>

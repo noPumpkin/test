@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c96bd0d8-6f2a-4495-82b0-4f16469aeeea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/SeckillApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/access/AccessInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/access/AccessLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/access/UserContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/config/DruidConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/config/MyMVCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/config/UserArgumentResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/controller/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/controller/SeckillController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/dao/GoodsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/dao/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/exception/GlobalException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/pojo/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/pojo/GoodsDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/pojo/GoodsVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/pojo/LoginParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/pojo/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/pojo/OrderInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/pojo/SeckillGoods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/pojo/SeckillOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/rabbitmq/MQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/rabbitmq/MQReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/rabbitmq/MQSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/rabbitmq/SeckillMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/redis/AccessKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/redis/BasePrefix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/redis/GoodsKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/redis/KeyPrefix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/redis/OrderKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/redis/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/redis/SeckillKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/redis/UserKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/redis/VerifyCodeKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/redis/lock/RedisLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/redis/lock/RedisOptimisticLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/result/CodeMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/result/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/service/GoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/service/Impl/GoodsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/service/Impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/service/Impl/SeckillServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/service/SeckillService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/utils/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/utils/UUIDUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/utils/ValidatorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/validator/IsMobile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/seckill/validator/IsMobileValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/css/detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/css/goods.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/css/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/img/back2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/img/index_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/img/iphone.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/img/oppo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/img/rongyao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/img/xiaomi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/jquery-validation/additional-methods.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/jquery-validation/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/jquery-validation/localization/messages_zh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/js/md5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/js/tessss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/layer/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/layer/mobile/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/layer/mobile/need/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/layer/skin/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/layer/skin/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/layer/skin/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/layer/skin/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/layer/skin/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assert/layer/skin/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/goods_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/goods_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/unlock.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/seckill/SeckillApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/seckill.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/SeckillApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/access/AccessInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/access/AccessLimit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/access/UserContext.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/config/DruidConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/config/MyMVCConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/config/UserArgumentResolver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/controller/GoodsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/controller/OrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/controller/RegisterController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/controller/SeckillController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/controller/TestController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/controller/TestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/dao/GoodsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/dao/OrderMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/dao/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/exception/GlobalException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/pojo/Goods.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/pojo/GoodsDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/pojo/GoodsVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/pojo/LoginParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/pojo/OrderDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/pojo/OrderInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/pojo/SeckillGoods.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/pojo/SeckillOrder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/rabbitmq/MQConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/rabbitmq/MQReceiver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/rabbitmq/MQSender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/rabbitmq/SeckillMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/redis/AccessKey.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/redis/BasePrefix.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/redis/GoodsKey.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/redis/KeyPrefix.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/redis/OrderKey.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/redis/RedisService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/redis/SeckillKey.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/redis/UserKey.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/redis/VerifyCodeKey.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/redis/lock/RedisLock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/redis/lock/RedisOptimisticLock$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/redis/lock/RedisOptimisticLock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/result/CodeMsg.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/result/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/service/GoodsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/service/Impl/GoodsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/service/Impl/OrderServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/service/Impl/SeckillServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/service/Impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/service/OrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/service/SeckillService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/utils/MD5Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/utils/UUIDUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/utils/ValidatorUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/validator/IsMobile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/seckill/validator/IsMobileValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/css/detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/css/goods.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/css/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/img/back2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/img/index_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/img/iphone.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/img/oppo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/img/rongyao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/img/xiaomi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/jquery-validation/additional-methods.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/jquery-validation/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/jquery-validation/localization/messages_zh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/js/md5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/js/tessss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/layer/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/layer/mobile/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/layer/mobile/need/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/layer/skin/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/layer/skin/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/layer/skin/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/layer/skin/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/layer/skin/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/assert/layer/skin/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/goods_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/goods_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/order_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/unlock.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/seckill/SeckillApplicationTests.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Environment\apache-maven-3.6.3\maven-repo" />
+        <option name="mavenHome" value="D:/Environment/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Environment\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pluNrXb6A624F4fMXFqHYLEN9q" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/BaiduNetdiskDownload/Spring Boot配套源代码 (1)/Spring Boot配套源代码 (1)/Spring Boot配套源代码/chapter01" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\代码\seckill\src\main\java\com\example\seckill" />
+      <recent name="D:\代码\seckill\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.seckill.utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\代码\seckill\src\main\resources\static\assert" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SeckillApplication">
+    <configuration name="MD5Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.seckill.utils.MD5Util" />
+      <module name="seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.seckill.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisOptimisticLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.seckill.redis.lock.RedisOptimisticLock" />
+      <module name="seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.seckill.redis.lock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeckillApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.seckill.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.seckill" />
+      <option name="MAIN_CLASS_NAME" value="com.example.seckill.SeckillApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeckillApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.seckill.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.seckill" />
+      <option name="MAIN_CLASS_NAME" value="com.example.seckill.SeckillApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeckillApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="seckill" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.seckill.SeckillApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RedisOptimisticLock" />
+        <item itemvalue="JUnit.SeckillApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.SeckillApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c96bd0d8-6f2a-4495-82b0-4f16469aeeea" name="Default Changelist" comment="" />
+      <created>1615769960539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615769960539</updated>
+      <workItem from="1615769963947" duration="2703000" />
+      <workItem from="1615946282494" duration="277000" />
+      <workItem from="1615946641925" duration="2411000" />
+      <workItem from="1616030820705" duration="29917000" />
+      <workItem from="1616156505346" duration="8246000" />
+      <workItem from="1616200597553" duration="40516000" />
+      <workItem from="1616292332004" duration="12877000" />
+      <workItem from="1616313198104" duration="14621000" />
+      <workItem from="1616378692486" duration="2876000" />
+      <workItem from="1616426330095" duration="1076000" />
+      <workItem from="1616507066260" duration="4179000" />
+      <workItem from="1616557950924" duration="961000" />
+      <workItem from="1616577193501" duration="3823000" />
+      <workItem from="1616655755499" duration="7921000" />
+      <workItem from="1616688327174" duration="1775000" />
+      <workItem from="1616937214122" duration="1510000" />
+      <workItem from="1617022028341" duration="1674000" />
+      <workItem from="1617035499949" duration="308000" />
+      <workItem from="1617073769820" duration="4069000" />
+      <workItem from="1617197363103" duration="3347000" />
+      <workItem from="1617264267701" duration="689000" />
+      <workItem from="1617337269777" duration="1139000" />
+      <workItem from="1618985973318" duration="2139000" />
+      <workItem from="1623601573297" duration="39000" />
+      <workItem from="1623601658686" duration="20000" />
+      <workItem from="1625306681453" duration="1410000" />
+      <workItem from="1625381111616" duration="1039000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
